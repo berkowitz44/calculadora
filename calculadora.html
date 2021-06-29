@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <title>test java script</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Mi Segundo Formulario" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+
+        function suma(){
+
+            var n1 = document.getElementById("num1").value;
+            
+            var n2 = document.getElementById("num2").value;
+
+            var sum = parseInt(n1) + parseInt(n2);
+
+
+            alert("la suma es :" + sum)
+
+        }
+
+
+        function multiplicion(){
+
+            var n1 = document.getElementById("num1").value;
+            
+            var n2 = document.getElementById("num2").value;
+
+            var mult = parseInt(n1) * parseInt(n2);
+
+
+            alert("la multiplicacion es :" + mult)
+        }
+
+
+
+        function divisi(){
+
+            var n1 = document.getElementById("num1").value;
+            
+            var n2 = document.getElementById("num2").value;
+
+            var divi = parseInt(n1) / parseInt(n2);
+
+            alert("la division es :" + divi )
+
+        }
+
+
+        function resta(){
+
+            var n1 = document.getElementById("num1").value;
+            
+            var n2 = document.getElementById("num2").value;
+
+            var rest = parseInt(n1) - parseInt(n2);
+
+            alert("la resta es :" + rest )
+        }
+
+    </script>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <form>
+
+        <div class="form-group">
+
+            <label for="num1">Número 1</label>
+
+            <input type="number" class="form-control" id="num1" name="num1"/>
+
+        </div>
+
+
+
+        <div class="form-group">
+
+            <label for="num2">Número 2</label>
+
+            <input type="number" class="form-control" id="num2" name="num2"/>
+
+        </div>
+
+        
+
+
+        <button type="submit" class="btn btn-primary" onclick="suma()">+</button>
+
+        <button type="submit" class="btn btn-primary" onclick="resta()">-</button>
+
+        <button type="submit" class="btn btn-primary" onclick="multiplicion()">*</button>
+
+        <button type="submit" class="btn btn-primary" onclick="divisi()">/</button>
+
+
+    </form>
+
+
+
+
+
+</body>
+
+
+
+</html>
